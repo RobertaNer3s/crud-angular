@@ -1,0 +1,38 @@
+@import '../../styles/variables'; 
+
+.header {
+    display: flex;
+    padding: 0 1.5rem;
+    height: 5rem;
+    width: 100%;
+    background-color: $primary;
+    color: $white;
+}
+
+.navbar {
+    font-size: 1.6rem;
+    display: flex;
+    width: 100%;
+    align-items: center;
+
+    h1 {
+        cursor: pointer;
+        display: flex;
+
+        i {
+            margin: 0 0.4rem; 
+        }
+    }
+
+    ul {
+        width: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+
+        li {
+            padding: 0 1.5rem;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 70rem;
+
+    i {
+        font-size: 25rem;
+    }
+
+    div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        h1 {
+            margin: 1.5rem 0;
+            font-size: 5rem;
+        }
+    }
+}

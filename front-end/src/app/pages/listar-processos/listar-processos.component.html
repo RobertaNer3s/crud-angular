@@ -1,0 +1,11 @@
+<section>
+    <div *ngFor="let processo of processos">
+        <div class="processo">
+            <div class="conteudo">
+                <h3>Número do processo: {{processo?.numero}}</h3>
+                <p>Nome do Réu:{{processo?.reu}}</p>
+            </div>
+            <div class="acoes"><i class="fa-solid fa-pen-to-square"></i></div>
+        </div>
+    </div>
+</section>

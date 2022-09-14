@@ -16,11 +16,24 @@ export class ListarProcessosComponent implements OnInit {
     this.listarTodosProcessos()
   }
 
-  listarTodosProcessos(){
+  listarTodosProcessos() {
     this.processoService.listarProcessos().subscribe((response) => {
       console.log(response)
       this.processos = response;
-    }, error => {})
+    }, error => { })
+  }
+
+  deletarProcesso(id: number | undefined) {
+    if (!id) {
+      return
+    }
+
+    this.processoService.deletarProcesso(id).subscribe(response => {
+      alert('Processo deletado com sucesso!')
+      this.listarTodosProcessos()
+    }, error => {
+      alert('Erro não foi possível deletar processo!')
+    })
   }
 
 }

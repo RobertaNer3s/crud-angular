@@ -8,6 +8,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { ListarProcessosComponent } from './pages/listar-processos/listar-processos.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './pages/home/home.component';
+import { FormsModule } from '@angular/forms';
+import { EditarProcessosComponent } from './pages/editar-processos/editar-processos.component';
 
 @NgModule({
   declarations: [
@@ -15,12 +17,14 @@ import { HomeComponent } from './pages/home/home.component';
     CadastrarProcessosComponent,
     NavbarComponent,
     ListarProcessosComponent,
-    HomeComponent
+    HomeComponent,
+    EditarProcessosComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

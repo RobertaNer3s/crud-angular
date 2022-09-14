@@ -22,4 +22,17 @@
     &:hover{
         transform: translateX(15px);
     }
+
+    .acoes{
+        display: flex;
+
+        i {
+            cursor: pointer;
+            margin: 0 0.5rem;
+        }
+
+        .icone-deletar {
+            color: red;
+        }
+    }
 }
